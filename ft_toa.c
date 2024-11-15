@@ -6,31 +6,25 @@ char	*ft_itoa(int n)
 	int				len_nb;
 	char			*str_nb;
 	unsigned int	nbr;
-  unsigned int zero;
 
 	nbr = n;
-  zero = 0;
+	len_nb = ft_intlen(nbr);
 	if (n == 0)
-		zero = 1;
-	len_nb = ft_intlen(nbr, 'i');
-	str_nb = (char *)malloc((len_nb + 1 + zero) * sizeof(char));
+		len_nb += 1;
+	str_nb = (char *)malloc((len_nb + 1) * sizeof(char));
 	if (! str_nb)
 		return (0);
-	*(str_nb + len_nb + zero) = 0;
-  if (zero)
-  { 
-    str_nb[0] = '0';
-    return (str_nb);
-  }
-	if (n < 0)
-		nbr = -nbr;
-	while ((len_nb--) > 0)
+	*(str_nb + len_nb) = 0;
+	if (n == 0)
+		str_nb[0] = '0';
+	else
 	{
-		str_nb[len_nb] = (nbr % 10 + '0');
-		nbr /= 10;
+		if (n < 0)
+			nbr = -nbr;
+		ft_copy(str_nb, nbr, len_nb);
+		if (n < 0)
+			*str_nb = '-';
 	}
-	if (n < 0)
-		*str_nb = '-';
 	return (str_nb);
 }
 
