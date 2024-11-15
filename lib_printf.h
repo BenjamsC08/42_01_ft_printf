@@ -17,6 +17,20 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+int ft_strlen(char *str);
+char	*ft_itoa(int n);
+char	*ft_utoa(unsigned int n);
+
+int ft_put_char_int(char c);
+int ft_put_str_int(char *str);
+
+int ft_put_nbr_int(int nbr);
+int ft_put_uint_int(unsigned int nb);
+
+
+
 int     ft_printf(const char *str, ...);
+
+
 
 #endif
