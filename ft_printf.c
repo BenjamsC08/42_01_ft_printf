@@ -20,7 +20,7 @@ int parse_format(va_list list, char type)
 	if (type == 'u')
 		len += ft_put_uint_int(va_arg(list, unsigned int));
 	if (type == 'x' || type == 'X')
-		len += 1;//ft_put_hex_int(va_arg(list, int), type);
+		len += ft_put_hex_int(va_arg(list, unsigned int), type);
 	if (type == '%')
 		len += ft_put_char_int('%');
 	return (len);
@@ -50,6 +50,6 @@ int ft_printf(const char* str, ... )
 int main()
 {
 	#include <stdio.h>
-	printf("%d",ft_printf("ab%s%u\n","cdef",4294967295));
+	printf("%d",ft_printf("ab%x\n",15));
 }
 

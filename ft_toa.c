@@ -1,35 +1,5 @@
 #include "lib_printf.h"
 
-int	ft_intlen(unsigned int nb)
-{
-	int	i;
-
-	i = 0;
-	if (nb > 2147483647)
-	{
-		i++;
-		nb = -nb;
-	}
-	while (nb > 0)
-	{
-		i++;
-		nb /= 10;
-	}
-	return (i);
-}
-
-int	ft_uintlen(unsigned int nb)
-{
-	int	i;
-
-	i = 0;
-	while (nb > 0)
-	{
-		i++;
-		nb /= 10;
-	}
-	return (i);
-}
 
 char	*ft_itoa(int n)
 {
@@ -42,7 +12,7 @@ char	*ft_itoa(int n)
   zero = 0;
 	if (n == 0)
 		zero = 1;
-	len_nb = ft_intlen(nbr);
+	len_nb = ft_intlen(nbr, 'i');
 	str_nb = (char *)malloc((len_nb + 1 + zero) * sizeof(char));
 	if (! str_nb)
 		return (0);
@@ -73,7 +43,7 @@ char	*ft_utoa(unsigned int n)
 	zero = 0;
 	if (n == 0)
 		zero = 1;
-	len = ft_uintlen(n);
+	len = ft_intlen(n, 'u');
 	str = (char *)malloc((len + 1 + zero) + sizeof(char));
 	if (! str)
 		return (0);

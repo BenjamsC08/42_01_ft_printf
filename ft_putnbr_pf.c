@@ -29,3 +29,28 @@ int ft_put_uint_int(unsigned int nb)
 	free(s);
 	return (len);
 }
+
+int ft_put_hex_int(unsigned int nbr, char type)
+{
+	unsigned int	nb;
+  char          *base;
+  
+  base = "0123456789abcdef";
+	nb = nbr;
+  if (type == 'X')
+    base = "0123456789ABCDEF";
+	if (nbr < 0)
+	{
+		write(1, "-", 1);
+		nb = -nb;
+	}
+	if (nb >= 16)
+	{
+		ft_put_hex_int(nbr / 16, type);
+		ft_put_hex_int(nbr % 16, type);
+	}
+	if (nb < 16)
+		write(1,&base[nbr], 1);
+  return (ft_xlen(nbr));
+}
+

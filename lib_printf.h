@@ -18,6 +18,9 @@
 #include <unistd.h>
 
 int ft_strlen(char *str);
+int	ft_intlen(unsigned int nb, char type);
+int ft_xlen(unsigned int nbr);
+
 char	*ft_itoa(int n);
 char	*ft_utoa(unsigned int n);
 
@@ -26,6 +29,7 @@ int ft_put_str_int(char *str);
 
 int ft_put_nbr_int(int nbr);
 int ft_put_uint_int(unsigned int nb);
+int ft_put_hex_int(unsigned int nbr, char type);
 
 
 
