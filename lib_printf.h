@@ -23,6 +23,7 @@ int ft_xlen(unsigned int nbr);
 
 char	*ft_itoa(int n);
 char	*ft_utoa(unsigned int n);
+char  *ft_xtoa(unsigned int nbr, char type)
 
 int ft_put_char_int(char c);
 int ft_put_str_int(char *str);

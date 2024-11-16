@@ -50,6 +50,6 @@ int ft_printf(const char* str, ... )
 int main()
 {
 	#include <stdio.h>
-	printf("%d",ft_printf("ab%x\n",15));
+	printf("%d",ft_printf("ab%x\n",150));
 }
 
