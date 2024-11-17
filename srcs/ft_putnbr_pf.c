@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lib_printf.h"
+#include "ft_printf.h"
 
 int	ft_put_nbr_int(int nb)
 {

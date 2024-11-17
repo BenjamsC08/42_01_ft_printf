@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lib_printf.h"
+#include "ft_printf.h"
 
 int	parse_format(va_list list, char type)
 {

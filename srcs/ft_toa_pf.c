@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lib_printf.h"
+#include "ft_printf.h"
 
 char	*ft_copy(char *str, unsigned int nbr, int len_nb)
 {

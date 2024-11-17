@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   lib_printf.h                                       :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: benjamsc <benjamsc@email.com>              +#+  +:+       +#+        */
+/*   By: benjamsc <benjamsc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/14 11:30:24 by benjamsc          #+#    #+#             */
-/*   Updated: 2024/11/17 01:00:14 by benjamsc         ###   ########.fr       */
+/*   Created: 2024/11/17 18:05:44 by benjamsc          #+#    #+#             */
+/*   Updated: 2024/11/17 18:05:47 by benjamsc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIB_PRINTF_H
-# define LIB_PRINTF_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
 # include <stdarg.h>
 # include <stdlib.h>
