@@ -23,6 +23,8 @@ int	ft_put_str_int(char *str)
 	int		len;
 
 	len = 0;
+	if (!str)
+		return (ft_put_str_int("(null)"));
 	while (*str)
 		len += ft_put_char_int(*(str++));
 	return (len);

@@ -22,7 +22,7 @@ int	parse_format(va_list list, char type)
 	if (type == 's')
 		len += ft_put_str_int(va_arg(list, char *));
 	if (type == 'p')
-		len += ft_put_void_int(va_arg(list, unsigned long));
+		len += ft_put_ptr_int(va_arg(list, unsigned long));
 	if (type == 'd' || type == 'i')
 		len += ft_put_nbr_int(va_arg(list, int));
 	if (type == 'u')
@@ -59,7 +59,6 @@ int main()
 	#include <stdio.h>
 	//int nb = 15;
 
-	printf("%p\n",NULL);
-	printf("%d",ft_printf("%p\n",NULL,234,dfsf,2342));
+	ft_printf("%i",-2147483648);
 }
 */
