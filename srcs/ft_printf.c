@@ -40,6 +40,8 @@ int	ft_printf(const char *str, ...)
 	int			length;
 	char		*s;
 
+	if (!str)
+		return (-1);
 	s = (char *)str - 1;
 	length = 0;
 	va_start(list, str);
@@ -59,6 +61,6 @@ int main()
 	#include <stdio.h>
 	//int nb = 15;
 
-	ft_printf("%i",-2147483648);
+	printf("%d",printf(1));
 }
 */
