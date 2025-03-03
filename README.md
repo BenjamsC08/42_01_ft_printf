@@ -1,6 +1,12 @@
-# Ft_Printf
+<h1 align="center">ft_printf</h1>
 
-## 🇫🇷 Explication
+<p align="center">
+  <a href="#explication-fr">🇫🇷</a> | <a href="#explanation-en">🇬🇧</a>
+</p>
+
+---
+
+## <a name="explication-fr"></a>🇫🇷 Explication
 
 ### Objectif
 Recréer la fonction `printf`.
@@ -10,7 +16,7 @@ une notion essentielle pour gérer un nombre variable d’arguments dans une fon
 
 ---
 
-## 🇬🇧 Explanation
+## <a name="explanation-en"></a>🇬🇧 Explanation
 
 ### Objective
 Recreate the `printf` function.
